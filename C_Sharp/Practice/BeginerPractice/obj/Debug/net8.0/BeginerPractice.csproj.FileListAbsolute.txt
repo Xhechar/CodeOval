@@ -12,3 +12,4 @@ H:\Lang_Practice\C_Sharp\Practice\BeginerPractice\obj\Debug\net8.0\refint\Begine
 H:\Lang_Practice\C_Sharp\Practice\BeginerPractice\obj\Debug\net8.0\BeginerPractice.pdb
 H:\Lang_Practice\C_Sharp\Practice\BeginerPractice\obj\Debug\net8.0\BeginerPractice.genruntimeconfig.cache
 H:\Lang_Practice\C_Sharp\Practice\BeginerPractice\obj\Debug\net8.0\ref\BeginerPractice.dll
+H:\Lang_Practice\C_Sharp\Practice\BeginerPractice\obj\Debug\net8.0\BeginerPractice.sourcelink.json
