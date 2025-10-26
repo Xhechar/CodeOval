@@ -1,0 +1,12 @@
+export class LongestPassword {
+  Solution(S: string): number {
+    return S.split(" ")
+      .filter(word => /^[a-zA-Z0-9]+$/.test(word)) // keep only alphanumeric words
+      .filter(word => {
+        const letters = [...word].filter(c => /[a-zA-Z]/.test(c)).length;
+        const digits = word.length - letters;
+        return letters % 2 === 0 && digits % 2 === 1;
+      })
+      .reduce((max, word) => Math.max(max, word.length), -1);
+  }
+}
