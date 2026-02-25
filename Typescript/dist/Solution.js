@@ -1,5 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const LongestPassword_1 = require("./LongestPassword/LongestPassword");
-const longest = new LongestPassword_1.LongestPassword();
-console.log(longest.Solution("test ?xy1"));
+const solution_1 = require("./ParityDegree/solution");
+// const longest: LongestPassword = new LongestPassword();
+// console.log(longest.Solution("test ?xy1"));
+// console.log(ArrListLen.Solution([1, 4, -1, 3, 2]));
+// console.log(MessageTrimmer.Solution("I am a happy man"));
+// console.log(FirstUnique.Solution([6, 4, 4, 6]));
+console.log(solution_1.ParityDegree.Solution(9));
+// console.log(ParkingBill.Solution("10:00", "13:00"));

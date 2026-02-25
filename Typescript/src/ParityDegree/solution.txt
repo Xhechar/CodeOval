@@ -1,0 +1,81 @@
+export function solution(N: number): number {
+  let count = 0;
+
+  while (N % 2 === 0) {
+    count++;
+    N = N / 2;
+  }
+
+  return count;
+}
+
+bit checking implementation
+
+export function solution(N: number): number {
+  let count = 0;
+
+  while ((N & 1) === 0) {
+    count++;
+    N >>= 1;
+  }
+
+  return count;
+}
+
+N & 1 checks the last bit.
+
+If last bit is 0 → number is even.
+
+Shift right removes that zero.
+
+This is still O(log N), but lower-level and elegant.
+
+Even more nerdy: in some languages there’s a built-in “count trailing zeros” instruction at the CPU level.
+
+This problem is secretly about understanding binary representation.
+
+Now let’s score you properly.
+
+Correctness:
+
+Fails for odd numbers → not 100%
+
+For even numbers → correct
+
+Performance:
+
+O(log N) → optimal
+
+Code clarity:
+
+Slightly overcomplicated
+
+Unnecessary state variable
+
+Incorrect input guard
+
+If this were Codility:
+
+Correctness: probably around 75–85%
+Performance: 100%
+Overall: maybe high 80s.
+
+If you remove the odd-number exception and simplify the loop?
+
+100%.
+
+Now here’s the deeper lesson.
+
+When a problem mentions:
+
+“highest power of 2”
+
+Your brain should immediately translate to:
+
+Binary thinking.
+
+Not multiplication loops.
+
+Not brute checking 2, 4, 8…
+
+Binary representation contains the answer directly.
